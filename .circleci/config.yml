@@ -1,5 +1,11 @@
 version: 2
 jobs:
+   test:
+     docker:
+       - image: circleci/node:latest
+     steps:
+       - checkout
+       - run: notacommand
    build:
      docker:
        - image: circleci/node:latest
